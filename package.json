@@ -1,0 +1,26 @@
+{
+  "name": "lumine",
+  "version": "0.0.0",
+  "description": "A layout and rendering engine for HTML5’s canvas element.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thure/lumine.git"
+  },
+  "keywords": [
+    "canvas",
+    "layout",
+    "render",
+    "virtual dom"
+  ],
+  "author": "Will Shown <will.shown@microsoft.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thure/lumine/issues"
+  },
+  "homepage": "https://github.com/thure/lumine",
+  "dependencies": {}
+}
