@@ -3,8 +3,11 @@
 <head>
     <meta charset="utf-8"/>
     <link rel="stylesheet" href="../../node_modules/mocha/mocha.css"/>
+    <script src="../bin/lumine.js"></script>
 </head>
 <body>
+
+    <canvas class="lumine"></canvas>
 
     <div id="mocha"></div>
 
@@ -14,12 +17,11 @@
     <script>
         mocha.setup('bdd');
         mocha.reporter('html');
-        expect = chai.expect;
+        chai.should();
     </script>
     <script src="render-phase.js"></script>
     <script>
-        if (window.mochaPhantomJS) { mochaPhantomJS.run(); }
-        else { mocha.run(); }
+        mocha.run();
     </script>
 
 </body>

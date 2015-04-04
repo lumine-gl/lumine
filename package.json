@@ -4,8 +4,9 @@
   "description": "A layout and rendering engine for HTML5’s canvas element.",
   "main": "index.js",
   "scripts": {
-    "test": "npm run test:ua",
-    "test:ua": "mocha-phantomjs ./test/ua/render-phase.html"
+    "test": "echo TO BE IMPLEMENTED",
+    "build:test": "mkdir test/bin || true && browserify index.js > ./test/bin/lumine.js",
+    "pretest": "npm run build:test"
   },
   "repository": {
     "type": "git",
@@ -23,12 +24,9 @@
     "url": "https://github.com/thure/lumine/issues"
   },
   "homepage": "https://github.com/thure/lumine",
-  "peerDependencies": {
-    "phantomjs": "^1.9.16"
-  },
   "devDependencies": {
+    "browserify": "latest",
     "chai": "^2.1.2",
-    "mocha": "^2.2.1",
-    "mocha-phantomjs": "^3.5.3"
+    "mocha": "^2.2.1"
   }
 }
