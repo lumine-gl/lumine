@@ -27,6 +27,7 @@
   "devDependencies": {
     "browserify": "latest",
     "chai": "latest",
+    "lodash": "latest",
     "mocha": "latest",
     "three": "latest"
   }
