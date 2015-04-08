@@ -35,10 +35,16 @@ describe('Lumine Canvas', function(){
       ],
       modules: {
         1: [
-          { fill: 0x252321 },
-          { fill: 0x393432 },
-          { fill: 0x6A7F7A },
-          { fill: 0x393432 }
+          { fill: 0xFA7B62 },
+          { fill: 0xFF8936 },
+          { fill: 0xF3C13A },
+          { fill: 0x5B8930 },
+          { fill: 0x407A52 },
+          { fill: 0x3A6960 },
+          { fill: 0x044F67 },
+          { fill: 0x1F4788 },
+          { fill: 0x614E6E },
+          { fill: 0x6D2B50 }
         ]
       }
     });
