@@ -2,11 +2,10 @@
   "name": "lumine",
   "version": "0.0.0",
   "description": "A layout and rendering engine for HTML5’s canvas element.",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo TO BE IMPLEMENTED",
-    "build:test": "mkdir test/bin || true && browserify index.js > ./test/bin/lumine.js",
-    "pretest": "npm run build:test"
+    "pretest": "webpack --config ./test/webpack.config.js ./lib/index.js ./test/bin/lumine.js",
+    "test": "mocha-phantomjs ./test/lib-test.html"
   },
   "repository": {
     "type": "git",
@@ -25,12 +24,16 @@
   },
   "homepage": "https://github.com/thure/lumine",
   "devDependencies": {
-    "browserify": "latest",
     "chai": "latest",
-    "mocha": "latest"
+    "mocha": "latest",
+    "mocha-phantomjs": "latest",
+    "node-libs-browser": "latest",
+    "shader-loader": "latest",
+    "webpack": "latest"
   },
   "dependencies": {
     "lodash": "latest",
+    "stats.js": "git://github.com/mrdoob/stats.js.git",
     "three": "latest"
   }
 }

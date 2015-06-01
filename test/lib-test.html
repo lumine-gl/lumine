@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <link rel="stylesheet" href="../node_modules/mocha/mocha.css"/>
+    <script src="./bin/lumine.js"></script>
+</head>
+<body>
+
+<canvas class="lumine"></canvas>
+
+<div id="mocha"></div>
+
+<script src="../node_modules/mocha/mocha.js"></script>
+<script src="../node_modules/chai/chai.js"></script>
+
+<script>
+    mocha.setup('bdd');
+    mocha.reporter('html');
+    chai.should();
+</script>
+<script src="lib-test.js"></script>
+<script>
+    if (typeof mochaPhantomJS !== 'undefined') {
+        mochaPhantomJS.run();
+    }
+    else {
+        mocha.run();
+    }
+</script>
+
+</body>
+</html>
