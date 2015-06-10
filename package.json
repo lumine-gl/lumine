@@ -1,7 +1,7 @@
 {
   "name": "lumine",
   "version": "0.0.0",
-  "description": "A layout and rendering engine for HTML5’s canvas element.",
+  "description": "An interaction, media, and layout engine for WebGL. Still very much in development – hang tight.",
   "main": "lib/index.js",
   "scripts": {
     "pretest": "webpack --config ./test/webpack.config.js ./lib/index.js ./test/bin/lumine.js",
