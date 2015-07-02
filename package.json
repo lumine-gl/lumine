@@ -1,6 +1,6 @@
 {
   "name": "lumine",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "An interaction, media, and layout engine for WebGL. Still very much in development – hang tight.",
   "main": "lib/index.js",
   "scripts": {
